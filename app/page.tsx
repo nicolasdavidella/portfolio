@@ -65,7 +65,7 @@ const content = {
     hero: {
       badge: "Young passionate developer 🚀",
       title:
-        "I create high-performance mobile and web applications that make a difference.",
+        "I'm Ella Ondoua. I create high-performance mobile and web applications that make a difference.",
       description:
         "I'm a young fullstack developer passionate about building cutting-edge cross-platform mobile applications and modern web platforms. I master Flutter, React Native, Next.js, and backend technologies (PHP, MySQL, Node.js) to deliver high-performance solutions with clean architecture and exceptional user experiences.",
       primaryCta: "Explore projects",
@@ -107,7 +107,7 @@ const content = {
     hero: {
       badge: "Jeune développeur passionné 🚀",
       title:
-        "Je crée des applications mobiles et web performantes qui font la différence.",
+        "Je suis Ella Ondoua. Je crée des applications mobiles et web performantes qui font la différence.",
       description:
         "Je suis un jeune développeur fullstack passionné par la création d'applications mobiles cross-platform et de plateformes web modernes. Je maîtrise Flutter, React Native, Next.js et les technologies backend (PHP, MySQL, Node.js) pour livrer des solutions performantes avec une architecture propre et des expériences utilisateur exceptionnelles.",
       primaryCta: "Explorer les projets",
@@ -173,13 +173,9 @@ export default function Home() {
           className={`mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 rounded-full border px-4 py-4 sm:px-6 sm:py-3 backdrop-blur-xl transition-colors duration-500 ${isDark ? "border-white/10 bg-white/5" : "border-slate-300/70 bg-white/70"}`}
         >
           <div className="flex-1">
-            <p className={`text-xs sm:text-xs uppercase tracking-[0.25em] sm:tracking-[0.35em] font-semibold mb-0.5 sm:mb-1 ${isDark ? "text-cyan-400" : "text-cyan-600"}`}>
+            <p className={`text-sm sm:text-base font-semibold ${isDark ? "text-white" : "text-slate-900"}`}>
               {copy.header.name}
             </p>
-            <p className={`text-[0.55rem] sm:text-[0.65rem] uppercase tracking-[0.2em] sm:tracking-[0.35em] ${isDark ? "text-cyan-300" : "text-cyan-700"}`}>
-              {copy.header.role}
-            </p>
-            <p className={`text-xs sm:text-sm ${isDark ? "text-slate-300" : "text-slate-700"}`}>{copy.header.tagline}</p>
           </div>
           <div className="flex items-center gap-2 flex-wrap sm:flex-nowrap">
             <button
