@@ -350,12 +350,32 @@ export default function Home() {
           <p className={`text-sm uppercase tracking-[0.3em] ${isDark ? "text-cyan-300" : "text-cyan-700"}`}>{copy.sections.contact.eyebrow}</p>
           <h2 className={`mt-3 text-3xl font-semibold ${isDark ? "text-white" : "text-slate-900"}`}>{copy.sections.contact.title}</h2>
           <p className={`mx-auto mt-4 max-w-2xl ${isDark ? "text-slate-300" : "text-slate-700"}`}>{copy.sections.contact.description}</p>
-          <a
-            href="mailto:hello@yourdomain.com"
-            className={`mt-6 inline-flex rounded-full px-5 py-3 font-semibold transition hover:scale-[1.02] ${isDark ? "bg-cyan-400 text-slate-950" : "bg-cyan-600 text-white"}`}
-          >
-            nicolasdavidella@gmail.com
-          </a>
+          
+          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-4">
+            <a
+              href="mailto:nicolasdavidella@gmail.com"
+              className={`rounded-full px-5 py-3 font-semibold transition hover:scale-[1.02] ${isDark ? "bg-cyan-400 text-slate-950" : "bg-cyan-600 text-white"}`}
+            >
+              ✉️ {language === "en" ? "Send me an email" : "M'envoyer un email"}
+            </a>
+            
+            <a
+              href="/Nicolas-CV.pdf"
+              download
+              className={`rounded-full px-5 py-3 font-semibold transition hover:scale-[1.02] ${isDark ? "bg-emerald-400 text-slate-950" : "bg-emerald-600 text-white"}`}
+            >
+              📄 {language === "en" ? "Download CV" : "Télécharger mon CV"}
+            </a>
+            
+            <a
+              href="https://wa.me/237658643417"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`rounded-full px-5 py-3 font-semibold transition hover:scale-[1.02] ${isDark ? "bg-green-400 text-slate-950" : "bg-green-600 text-white"}`}
+            >
+              💬 {language === "en" ? "WhatsApp me" : "M'envoyer un WhatsApp"}
+            </a>
+          </div>
         </motion.section>
       </main>
     </div>
