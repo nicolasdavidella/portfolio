@@ -223,10 +223,11 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="#projects"
+                href="/Nicolas-CV.pdf"
+                download
                 className={`rounded-full px-5 py-3 text-sm font-semibold transition hover:scale-[1.02] ${isDark ? "bg-white text-slate-950" : "bg-slate-900 text-white"}`}
               >
-                {copy.hero.primaryCta}
+                📄 {language === "en" ? "Download CV" : "Télécharger mon CV"}
               </a>
               <a
                 href="#about"
@@ -357,14 +358,6 @@ export default function Home() {
               className={`rounded-full px-5 py-3 font-semibold transition hover:scale-[1.02] ${isDark ? "bg-cyan-400 text-slate-950" : "bg-cyan-600 text-white"}`}
             >
               ✉️ {language === "en" ? "Send me an email" : "M'envoyer un email"}
-            </a>
-            
-            <a
-              href="/Nicolas-CV.pdf"
-              download
-              className={`rounded-full px-5 py-3 font-semibold transition hover:scale-[1.02] ${isDark ? "bg-emerald-400 text-slate-950" : "bg-emerald-600 text-white"}`}
-            >
-              📄 {language === "en" ? "Download CV" : "Télécharger mon CV"}
             </a>
             
             <a
