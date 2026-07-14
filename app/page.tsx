@@ -57,16 +57,17 @@ const techStack = [
 const content = {
   en: {
     header: {
-      role: "Software Engineer",
+      name: "Ella Ondoua Nicolas David",
+      role: "Fullstack Developer",
       tagline: "Mobile • Web • Product Systems",
       cta: "Let’s build",
     },
     hero: {
       badge: "Building polished products for ambitious teams",
       title:
-        "I create elegant mobile and web experiences that feel as refined as they are reliable.",
+        "Fullstack Developer specializing in mobile and web applications.",
       description:
-        "Fullstack developer specializing in cross-platform apps with Flutter, React Native, and modern web platforms. I craft scalable, high-performance solutions using Flutter, React Native, PHP, and MySQL—with a sharp focus on clean architecture, exceptional performance, and measurable product impact.",
+        "I'm Ella Ondoua Nicolas David, a fullstack developer with expertise in cross-platform mobile applications, modern web platforms, and scalable systems. I specialize in Flutter, React Native, Next.js, and backend technologies (PHP, MySQL, Node.js) to deliver high-performance solutions with clean architecture and exceptional user experiences.",
       primaryCta: "Explore projects",
       secondaryCta: "Learn more",
       portraitAlt: "Professional portrait",
@@ -98,16 +99,17 @@ const content = {
   },
   fr: {
     header: {
-      role: "Ingénieur logiciel",
+      name: "Ella Ondoua Nicolas David",
+      role: "Développeur Fullstack",
       tagline: "Mobile • Web • Systèmes produit",
       cta: "Construisons",
     },
     hero: {
       badge: "Création de produits soignés pour des équipes ambitieuses",
       title:
-        "Je conçois des expériences mobiles et web élégantes, à la fois raffinées et fiables.",
+        "Développeur Fullstack spécialisé dans les applications mobiles et web.",
       description:
-        "Développeur fullstack spécialisé dans les applications cross-platform avec Flutter, React Native et les plateformes web modernes. Je crée des solutions évolutives et performantes en Flutter, React Native, PHP et MySQL, avec une attention particulière à la performance, à l'architecture propre et à l'impact produit mesurable.",
+        "Je suis Ella Ondoua Nicolas David, développeur fullstack passionné par la création d'applications mobiles cross-platform et de plateformes web modernes. Je maîtrise Flutter, React Native, Next.js et les technologies backend (PHP, MySQL, Node.js) pour livrer des solutions performantes avec une architecture propre et des expériences utilisateur exceptionnelles.",
       primaryCta: "Explorer les projets",
       secondaryCta: "En savoir plus",
       portraitAlt: "Portrait professionnel",
@@ -171,6 +173,9 @@ export default function Home() {
           className={`mb-8 flex items-center justify-between rounded-full border px-4 py-3 backdrop-blur-xl transition-colors duration-500 ${isDark ? "border-white/10 bg-white/5" : "border-slate-300/70 bg-white/70"}`}
         >
           <div>
+            <p className={`text-xs uppercase tracking-[0.35em] font-semibold mb-1 ${isDark ? "text-cyan-400" : "text-cyan-600"}`}>
+              {copy.header.name}
+            </p>
             <p className={`text-[0.65rem] uppercase tracking-[0.35em] ${isDark ? "text-cyan-300" : "text-cyan-700"}`}>
               {copy.header.role}
             </p>
