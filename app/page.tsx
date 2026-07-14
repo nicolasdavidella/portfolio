@@ -230,7 +230,7 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                className={`rounded-full px-5 py-3 text-sm font-semibold transition cursor-pointer ${isDark ? "bg-white text-slate-950" : "bg-slate-900 text-white"}`}
+                className={`rounded-full px-5 py-3 text-sm font-semibold transition cursor-pointer ${isDark ? "bg-white text-slate-950 hover:bg-cyan-100 shadow-lg hover:shadow-cyan-500/50" : "bg-slate-900 text-white hover:bg-cyan-600 shadow-lg hover:shadow-cyan-500/40"}`}
               >
                 {language === "en" ? "Download CV" : "Télécharger mon CV"}
               </motion.a>
