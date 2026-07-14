@@ -66,7 +66,7 @@ const content = {
       title:
         "I create elegant mobile and web experiences that feel as refined as they are reliable.",
       description:
-        "I design and engineer cross-platform apps and scalable web platforms using Flutter, React Native, PHP, and MySQL—with a sharp focus on performance, clarity, and product impact.",
+        "Fullstack developer specializing in cross-platform apps with Flutter, React Native, and modern web platforms. I craft scalable, high-performance solutions using Flutter, React Native, PHP, and MySQL—with a sharp focus on clean architecture, exceptional performance, and measurable product impact.",
       primaryCta: "Explore projects",
       secondaryCta: "Learn more",
       portraitAlt: "Professional portrait",
@@ -83,7 +83,7 @@ const content = {
         eyebrow: "About",
         title: "I blend product thinking with systems-level execution.",
         description:
-          "I’ve built interfaces and APIs for fast-moving startups and established teams, always balancing strong architecture with user experience that feels effortless.",
+          "I'm a fullstack developer passionate about building impactful digital products. With years of experience, I've engineered intuitive interfaces and robust APIs for fast-moving startups and established teams. My approach prioritizes clean architecture, performance optimization, and seamless user experiences.",
       },
       stack: {
         eyebrow: "Tech stack",
@@ -107,7 +107,7 @@ const content = {
       title:
         "Je conçois des expériences mobiles et web élégantes, à la fois raffinées et fiables.",
       description:
-        "Je conçois et développe des applications cross-platform et des plateformes web évolutives avec Flutter, React Native, PHP et MySQL, avec une forte attention à la performance, à la clarté et à l’impact produit.",
+        "Développeur fullstack spécialisé dans les applications cross-platform avec Flutter, React Native et les plateformes web modernes. Je crée des solutions évolutives et performantes en Flutter, React Native, PHP et MySQL, avec une attention particulière à la performance, à l'architecture propre et à l'impact produit mesurable.",
       primaryCta: "Explorer les projets",
       secondaryCta: "En savoir plus",
       portraitAlt: "Portrait professionnel",
@@ -349,7 +349,7 @@ export default function Home() {
             href="mailto:hello@yourdomain.com"
             className={`mt-6 inline-flex rounded-full px-5 py-3 font-semibold transition hover:scale-[1.02] ${isDark ? "bg-cyan-400 text-slate-950" : "bg-cyan-600 text-white"}`}
           >
-            hello@yourdomain.com
+            nicolasdavidella@gmail.com
           </a>
         </motion.section>
       </main>
