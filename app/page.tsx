@@ -57,17 +57,17 @@ const techStack = [
 const content = {
   en: {
     header: {
-      name: "Ella Ondoua Nicolas David",
+      name: "Hi, I'm Ella Ondoua",
       role: "Fullstack Developer",
-      tagline: "Mobile • Web • Product Systems",
-      cta: "Let’s build",
+      tagline: "Mobile • Web • Innovation",
+      cta: "Let's build",
     },
     hero: {
-      badge: "Building polished products for ambitious teams",
+      badge: "Young passionate developer 🚀",
       title:
-        "Fullstack Developer specializing in mobile and web applications.",
+        "I create high-performance mobile and web applications that make a difference.",
       description:
-        "I'm Ella Ondoua Nicolas David, a fullstack developer with expertise in cross-platform mobile applications, modern web platforms, and scalable systems. I specialize in Flutter, React Native, Next.js, and backend technologies (PHP, MySQL, Node.js) to deliver high-performance solutions with clean architecture and exceptional user experiences.",
+        "I'm a young fullstack developer passionate about building cutting-edge cross-platform mobile applications and modern web platforms. I master Flutter, React Native, Next.js, and backend technologies (PHP, MySQL, Node.js) to deliver high-performance solutions with clean architecture and exceptional user experiences.",
       primaryCta: "Explore projects",
       secondaryCta: "Learn more",
       portraitAlt: "Professional portrait",
@@ -99,17 +99,17 @@ const content = {
   },
   fr: {
     header: {
-      name: "Ella Ondoua Nicolas David",
+      name: "Salut, je suis Ella Ondoua",
       role: "Développeur Fullstack",
-      tagline: "Mobile • Web • Systèmes produit",
+      tagline: "Mobile • Web • Innovation",
       cta: "Construisons",
     },
     hero: {
-      badge: "Création de produits soignés pour des équipes ambitieuses",
+      badge: "Jeune développeur passionné 🚀",
       title:
-        "Développeur Fullstack spécialisé dans les applications mobiles et web.",
+        "Je crée des applications mobiles et web performantes qui font la différence.",
       description:
-        "Je suis Ella Ondoua Nicolas David, développeur fullstack passionné par la création d'applications mobiles cross-platform et de plateformes web modernes. Je maîtrise Flutter, React Native, Next.js et les technologies backend (PHP, MySQL, Node.js) pour livrer des solutions performantes avec une architecture propre et des expériences utilisateur exceptionnelles.",
+        "Je suis un jeune développeur fullstack passionné par la création d'applications mobiles cross-platform et de plateformes web modernes. Je maîtrise Flutter, React Native, Next.js et les technologies backend (PHP, MySQL, Node.js) pour livrer des solutions performantes avec une architecture propre et des expériences utilisateur exceptionnelles.",
       primaryCta: "Explorer les projets",
       secondaryCta: "En savoir plus",
       portraitAlt: "Portrait professionnel",
