@@ -222,8 +222,8 @@ export default function Home() {
                 href="/Nicolas-CV.pdf"
                 download
                 initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: [0, -8, 0] }}
-                transition={{ duration: 0.6, delay: 0.3, repeat: Infinity, repeatType: "loop" }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 className={`rounded-full px-5 py-3 text-sm font-semibold transition cursor-pointer ${isDark ? "bg-white text-slate-950 hover:bg-cyan-100 shadow-lg hover:shadow-cyan-500/50" : "bg-slate-900 text-white hover:bg-cyan-600 shadow-lg hover:shadow-cyan-500/40"}`}
