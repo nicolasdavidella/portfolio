@@ -222,13 +222,18 @@ export default function Home() {
               {copy.hero.description}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a
+              <motion.a
                 href="/Nicolas-CV.pdf"
                 download
-                className={`rounded-full px-5 py-3 text-sm font-semibold transition hover:scale-[1.02] ${isDark ? "bg-white text-slate-950" : "bg-slate-900 text-white"}`}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                className={`rounded-full px-5 py-3 text-sm font-semibold transition cursor-pointer ${isDark ? "bg-white text-slate-950" : "bg-slate-900 text-white"}`}
               >
-                📄 {language === "en" ? "Download CV" : "Télécharger mon CV"}
-              </a>
+                {language === "en" ? "Download CV" : "Télécharger mon CV"}
+              </motion.a>
               <a
                 href="#about"
                 className={`rounded-full border px-5 py-3 text-sm font-semibold transition ${isDark ? "border-white/15 text-slate-200 hover:border-cyan-300/50 hover:text-cyan-200" : "border-slate-300/70 text-slate-700 hover:border-cyan-400/40 hover:text-cyan-700"}`}
