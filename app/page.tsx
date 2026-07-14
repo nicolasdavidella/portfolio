@@ -170,35 +170,35 @@ export default function Home() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className={`mb-8 flex items-center justify-between rounded-full border px-4 py-3 backdrop-blur-xl transition-colors duration-500 ${isDark ? "border-white/10 bg-white/5" : "border-slate-300/70 bg-white/70"}`}
+          className={`mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 rounded-full border px-4 py-4 sm:px-6 sm:py-3 backdrop-blur-xl transition-colors duration-500 ${isDark ? "border-white/10 bg-white/5" : "border-slate-300/70 bg-white/70"}`}
         >
-          <div>
-            <p className={`text-xs uppercase tracking-[0.35em] font-semibold mb-1 ${isDark ? "text-cyan-400" : "text-cyan-600"}`}>
+          <div className="flex-1">
+            <p className={`text-xs sm:text-xs uppercase tracking-[0.25em] sm:tracking-[0.35em] font-semibold mb-0.5 sm:mb-1 ${isDark ? "text-cyan-400" : "text-cyan-600"}`}>
               {copy.header.name}
             </p>
-            <p className={`text-[0.65rem] uppercase tracking-[0.35em] ${isDark ? "text-cyan-300" : "text-cyan-700"}`}>
+            <p className={`text-[0.55rem] sm:text-[0.65rem] uppercase tracking-[0.2em] sm:tracking-[0.35em] ${isDark ? "text-cyan-300" : "text-cyan-700"}`}>
               {copy.header.role}
             </p>
-            <p className={`text-sm ${isDark ? "text-slate-300" : "text-slate-700"}`}>{copy.header.tagline}</p>
+            <p className={`text-xs sm:text-sm ${isDark ? "text-slate-300" : "text-slate-700"}`}>{copy.header.tagline}</p>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap sm:flex-nowrap">
             <button
               type="button"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className={`rounded-full border px-3 py-2 text-sm font-medium transition ${isDark ? "border-white/10 bg-white/5 text-slate-200 hover:border-cyan-300/40 hover:text-cyan-200" : "border-slate-300/70 bg-white/80 text-slate-700 hover:border-cyan-400/40 hover:text-cyan-700"}`}
+              className={`rounded-full border px-2.5 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm font-medium transition ${isDark ? "border-white/10 bg-white/5 text-slate-200 hover:border-cyan-300/40 hover:text-cyan-200" : "border-slate-300/70 bg-white/80 text-slate-700 hover:border-cyan-400/40 hover:text-cyan-700"}`}
             >
               {isDark ? "☀️" : "🌙"}
             </button>
             <button
               type="button"
               onClick={() => setLanguage(language === "en" ? "fr" : "en")}
-              className={`rounded-full border px-3 py-2 text-sm font-medium transition ${isDark ? "border-white/10 bg-white/5 text-slate-200 hover:border-cyan-300/40 hover:text-cyan-200" : "border-slate-300/70 bg-white/80 text-slate-700 hover:border-cyan-400/40 hover:text-cyan-700"}`}
+              className={`rounded-full border px-2.5 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm font-medium transition ${isDark ? "border-white/10 bg-white/5 text-slate-200 hover:border-cyan-300/40 hover:text-cyan-200" : "border-slate-300/70 bg-white/80 text-slate-700 hover:border-cyan-400/40 hover:text-cyan-700"}`}
             >
               {language === "en" ? "FR" : "EN"}
             </button>
             <a
               href="#contact"
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition ${isDark ? "border-cyan-400/40 bg-cyan-400/10 text-cyan-200 hover:bg-cyan-400/20" : "border-cyan-500/40 bg-cyan-500/10 text-cyan-700 hover:bg-cyan-500/20"}`}
+              className={`rounded-full border px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium transition ${isDark ? "border-cyan-400/40 bg-cyan-400/10 text-cyan-200 hover:bg-cyan-400/20" : "border-cyan-500/40 bg-cyan-500/10 text-cyan-700 hover:bg-cyan-500/20"}`}
             >
               {copy.header.cta}
             </a>
