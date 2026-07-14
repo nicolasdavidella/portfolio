@@ -349,7 +349,7 @@ export default function Home() {
             href="mailto:hello@yourdomain.com"
             className={`mt-6 inline-flex rounded-full px-5 py-3 font-semibold transition hover:scale-[1.02] ${isDark ? "bg-cyan-400 text-slate-950" : "bg-cyan-600 text-white"}`}
           >
-            hello@yourdomain.com
+            nicolasdavidella@gmail.com
           </a>
         </motion.section>
       </main>
